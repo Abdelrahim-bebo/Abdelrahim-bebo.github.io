@@ -57,9 +57,16 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+                alt="Abdelrahim Bebo"
+                src={require("../../assets/images/bebo.jpg")}
+                style={{ borderRadius: "50%",
+                      width: "320px",   // bigger width
+                      height: "320px",  // keep aspect ratio
+                      objectFit: "cover",
+                      marginLeft: "50px", // push it more to the right 
+                      marginTop: "70px" 
+                      }}
+/>
             )}
           </div>
         </div>
