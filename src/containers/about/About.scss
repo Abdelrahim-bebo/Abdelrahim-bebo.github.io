@@ -1,0 +1,41 @@
+@import "../../_globalColor";
+
+.about-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.about-title {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.about-text-div {
+  text-align: left;
+  max-width: 100%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 2rem;
+  text-align: justify;
+  color: $textColor;
+  white-space: pre-wrap;
+}
+
+.dark-mode {
+  .about-title {
+    color: $textColorDark;
+  }
+  .about-text {
+    color: $textColorDark;
+  }
+}

@@ -9,7 +9,19 @@ const greeting = {
     "A passionate DevOps Engineer 🚀 with experience in Linux system administration, containerization, and cloud infrastructure. I build scalable automation pipelines and support modern DevOps practices."
   ),
   resumeLink: "https://drive.google.com/file/d/1RfJjixSuGwaephF76zv5Jvwp2v1HyExW/view?usp=sharing", // Replace with your Google Drive resume link
+  profilePic: require("./assets/images/bebo.jpg"), // Added your photo
   displayGreeting: true
+};
+
+// About Me Section
+const aboutSection = {
+  display: true,
+  title: "About Me",
+  content: `I started my career deep in the world of embedded systems, where precision and reliability were more than technical goals—they were a passion. Over time, I realized the processes around building and deploying this software were often manual and slow, limiting what teams could achieve and introducing unnecessary risk. That realization became my catalyst for change.
+
+Driven to make a broader impact, I stepped up as part of the engineering team and championed the adoption of DevOps practices. I was directly involved in introducing modern CI/CD pipelines and automation, helping the group shift from legacy manual deployments to fast, repeatable, and reliable workflows. This transformation wasn't just technical—it was cultural, requiring trust, training, and open collaboration.
+
+Helping guide my team through this change, I ran hands-on demo sessions, wrote clear documentation, and always ensured we had safety nets—like robust rollback plans—for our new approaches. The result was a more agile, resilient, and empowered team, ready to take on challenges with confidence. My journey from embedded systems to DevOps taught me that innovation thrives at the intersection of curiosity and courage, and I bring this mindset to every project I join.`
 };
 
 // Social Media Links
@@ -29,6 +41,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle: "PASSIONATE DEVOPS ENGINEER WHO WANTS TO EXPLORE CLOUD TECHNOLOGIES AND AUTOMATION",
+  fullWidth: true, // Added to make it take full width
   skills: [
     emoji("⚡ Build and maintain CI/CD pipelines using Jenkins and GitHub Actions"),
     emoji("⚡ Containerize applications using Docker and orchestrate with Kubernetes"),
@@ -178,8 +191,8 @@ const workExperiences = {
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true
+  showGithubProfile: "false",
+  display: false // Disabled the Open Source section
 };
 
 // Some big projects you have worked on
@@ -244,24 +257,14 @@ const achievementSection = {
     {
       title: "Linux System Administration",
       subtitle: "Completed multiple Linux fundamentals courses totaling 98+ hours of hands-on training",
-      // image: require("./assets/images/linux_logo.png"),
-      footerLink: [
-        {
-          name: "View Certificates",
-          url: "#" // Add certificate link
-        }
-      ]
+      image: require("./assets/images/Linux.jpg"),
+      footerLink: []  // Empty array since we don't have certificates yet
     },
     {
-      title: "Programming Certifications", 
+      title: "Programming Skills", 
       subtitle: "Completed intensive programming courses in C++ (80 hrs), Python (50 hrs), and Golang",
-      // image: require("./assets/images/programming_logo.png"),
-      footerLink: [
-        {
-          name: "View Certificates",
-          url: "#" // Add certificate link
-        }
-      ]
+      image: require("./assets/images/Python.png"),
+      footerLink: []  // Empty array since we don't have certificates yet
     }
   ],
   display: true
@@ -323,9 +326,9 @@ const isHireable = true;
 
 // Splash Screen Settings
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: require("./assets/lottie/splashAnimation.json"),
-  duration: 2000 // Set animation duration as per your animation
+  enabled: false, // Disabled splash screen
+  animation: null,
+  duration: 0
 };
 
 // SEO Related settings
@@ -350,13 +353,16 @@ const resumeSection = {
 
 // Illustration Settings
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false, // Disabled animations
+  display: true, // Show the illustration
+  imagePath: require("./assets/images/bebo2.jpg") // Using your second photo
 };
 
 export {
   greeting,
   socialMediaLinks,
   skillsSection,
+  aboutSection,
   educationInfo,
   techStack,
   workExperiences,
