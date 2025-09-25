@@ -207,7 +207,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Project",
-          url: "https://github.com/Alaaabdelmoneam/DMS-GP" // Add your project link
+          url: "https://github.com/Abdelrahim-bebo/DMS-GP" // Add your project link
         }
       ]
     },
@@ -250,7 +250,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certifications",
-          url: "#" // Add your certificate verification link
+          url: "https://drive.google.com/drive/folders/1FRCB-p4C1-96G12lBX_QNOwzCxqgb7Lz?usp=drive_link" // Add your certificate verification link
         }
       ]
     },
