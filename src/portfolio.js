@@ -8,7 +8,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate DevOps Engineer 🚀 with experience in Linux system administration, containerization, and cloud infrastructure. I build scalable automation pipelines and support modern DevOps practices."
   ),
-  resumeLink: "https://drive.google.com/file/d/1RfJjixSuGwaephF76zv5Jvwp2v1HyExW/view?usp=sharing", // Replace with your Google Drive resume link
+  resumeLink: "https://drive.google.com/file/d/1sURMRAU_cicqvmN4-du1r95jHg6xIBDx/view?usp=drive_link", // Replace with your Google Drive resume link
   profilePic: require("./assets/images/bebo.jpg"), // Added your photo
   displayGreeting: true
 };
@@ -48,7 +48,11 @@ const skillsSection = {
     emoji("⚡ Automate infrastructure provisioning and configuration management using Ansible and Terraform"),
     emoji("⚡ Deploy and manage applications on AWS cloud platforms"),
     emoji("⚡ Monitor system performance and implement logging solutions"),
-    emoji("⚡ Develop scripts in Bash and Python for automation tasks")
+    emoji("⚡ Develop scripts in Bash and Python for automation tasks"),
+    emoji("⚡ Design and implement secure network architectures (CCNA/CCNP certified)"),
+    emoji("⚡ Manage databases and virtualized environments (Oracle, Solaris, Virtualization)"),
+    emoji("⚡ Visualize metrics and alert on system health using Prometheus and Grafana"),
+    emoji("⚡ Deploy cloud infrastructure and services on Microsoft Azure")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -88,7 +92,7 @@ const skillsSection = {
     },
     {
       skillName: "Golang",
-      fontAwesomeClassname: "fab fa-go"
+      fontAwesomeClassname: "fab fa-golang"
     },
     {
       skillName: "Ansible",
@@ -101,6 +105,54 @@ const skillsSection = {
     {
       skillName: "Bash",
       fontAwesomeClassname: "fas fa-terminal"
+    },
+    {
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "Oracle",
+      fontAwesomeClassname: "fas fa-database" // Generic database icon
+    },
+    {
+      skillName: "Database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "CCNA",
+      fontAwesomeClassname: "fas fa-network-wired" // Generic network icon
+    },
+    {
+      skillName: "CCNP",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "MCSA",
+      fontAwesomeClassname: "fab fa-windows"
+    },
+    {
+      skillName: "GitHub Actions",
+      fontAwesomeClassname: "fas fa-play-circle" // Represents 'Actions/Running'
+    },
+    {
+      skillName: "Prometheus",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Grafana",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "Solaris",
+      fontAwesomeClassname: "fas fa-sun"
+    },
+    {
+      skillName: "Web",
+      fontAwesomeClassname: "fas fa-globe"
+    },
+    {
+      skillName: "Virtualization",
+      fontAwesomeClassname: "fas fa-desktop"
     }
   ],
   display: true
@@ -120,6 +172,18 @@ const educationInfo = {
         "Graduated with Excellent grade",
         "Specialized in embedded systems and communication technologies",
         "Completed graduation project on AI-based Driver Monitoring System"
+      ]
+    },
+    {
+      schoolName: "ITI (Information Technology Institute)",
+      logo: require("./assets/images/iti.jpeg"), // Add ITI logo to assets/images/
+      subHeader: "Joined ITI for Professional Diploma in System Administration and Cloud Computing",
+      duration: "October 2025 - July 2026",
+      descBullets: [
+        "joined 9-month intensive diploma program at ITI",
+        "Studied System Administration, Cloud Computing, and DevOps tools",
+        "Studies included hands-on labs and real-world projects",
+        "Completed a lot of practical assignments, projects, and exams to get International Certifications and build skills"
       ]
     }
   ]
@@ -310,7 +374,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+201090337089",
+  number: "+201044947347",
   email_address: "abdelrahimbebo@gmail.com",
   location: "SidiBeshr, Alexandria, Egypt"
 };
