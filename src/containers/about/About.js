@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import { aboutSection } from "../../portfolio";
+import {aboutSection} from "../../portfolio";
 
 export default function About() {
   if (!aboutSection.display) {

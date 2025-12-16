@@ -8,7 +8,8 @@ const greeting = {
   subTitle: emoji(
     "A passionate DevOps Engineer 🚀 with experience in Linux system administration, containerization, and cloud infrastructure. I build scalable automation pipelines and support modern DevOps practices."
   ),
-  resumeLink: "https://drive.google.com/file/d/1sURMRAU_cicqvmN4-du1r95jHg6xIBDx/view?usp=drive_link", // Replace with your Google Drive resume link
+  resumeLink:
+    "https://drive.google.com/file/d/1sURMRAU_cicqvmN4-du1r95jHg6xIBDx/view?usp=drive_link", // Replace with your Google Drive resume link
   profilePic: require("./assets/images/bebo.jpg"), // Added your photo
   displayGreeting: true
 };
@@ -40,18 +41,31 @@ const socialMediaLinks = {
 // Skills Section
 const skillsSection = {
   title: "What I do",
-  subTitle: "PASSIONATE DEVOPS ENGINEER WHO WANTS TO EXPLORE CLOUD TECHNOLOGIES AND AUTOMATION",
+  subTitle:
+    "PASSIONATE DEVOPS ENGINEER WHO WANTS TO EXPLORE CLOUD TECHNOLOGIES AND AUTOMATION",
   fullWidth: true, // Added to make it take full width
   skills: [
-    emoji("⚡ Build and maintain CI/CD pipelines using Jenkins and GitHub Actions"),
-    emoji("⚡ Containerize applications using Docker and orchestrate with Kubernetes"),
-    emoji("⚡ Automate infrastructure provisioning and configuration management using Ansible and Terraform"),
+    emoji(
+      "⚡ Build and maintain CI/CD pipelines using Jenkins and GitHub Actions"
+    ),
+    emoji(
+      "⚡ Containerize applications using Docker and orchestrate with Kubernetes"
+    ),
+    emoji(
+      "⚡ Automate infrastructure provisioning and configuration management using Ansible and Terraform"
+    ),
     emoji("⚡ Deploy and manage applications on AWS cloud platforms"),
     emoji("⚡ Monitor system performance and implement logging solutions"),
     emoji("⚡ Develop scripts in Bash and Python for automation tasks"),
-    emoji("⚡ Design and implement secure network architectures (CCNA/CCNP certified)"),
-    emoji("⚡ Manage databases and virtualized environments (Oracle, Solaris, Virtualization)"),
-    emoji("⚡ Visualize metrics and alert on system health using Prometheus and Grafana"),
+    emoji(
+      "⚡ Design and implement secure network architectures (CCNA/CCNP certified)"
+    ),
+    emoji(
+      "⚡ Manage databases and virtualized environments (Oracle, Solaris, Virtualization)"
+    ),
+    emoji(
+      "⚡ Visualize metrics and alert on system health using Prometheus and Grafana"
+    ),
     emoji("⚡ Deploy cloud infrastructure and services on Microsoft Azure")
   ],
 
@@ -177,7 +191,8 @@ const educationInfo = {
     {
       schoolName: "ITI (Information Technology Institute)",
       logo: require("./assets/images/iti.jpeg"), // Add ITI logo to assets/images/
-      subHeader: "Joined ITI for Professional Diploma in System Administration and Cloud Computing",
+      subHeader:
+        "Joined ITI for Professional Diploma in System Administration and Cloud Computing",
       duration: "October 2025 - July 2026",
       descBullets: [
         "joined 9-month intensive diploma program at ITI",
@@ -202,7 +217,7 @@ const techStack = {
       progressPercentage: "80%"
     },
     {
-      Stack: "Containerization & Orchestration", 
+      Stack: "Containerization & Orchestration",
       progressPercentage: "75%"
     },
     {
@@ -267,7 +282,8 @@ const bigProjects = {
     {
       // image: require("./assets/images/dms_project.png"), // Add project image
       projectName: "AI-based Driver Monitoring System (DMS)",
-      projectDesc: "Real-time AI-based Driver Monitoring System developed on BeagleBone AI-64 using IMX219 camera. Built and compared minimal Yocto and Buildroot Linux images with MIPI CSI-2 camera support.",
+      projectDesc:
+        "Real-time AI-based Driver Monitoring System developed on BeagleBone AI-64 using IMX219 camera. Built and compared minimal Yocto and Buildroot Linux images with MIPI CSI-2 camera support.",
       footerLink: [
         {
           name: "Visit Project",
@@ -289,10 +305,11 @@ const bigProjects = {
     {
       // image: require("./assets/images/ansible_project.png"), // Add project image
       projectName: "Automated Node.js Deployment",
-      projectDesc: "Developed and executed Ansible playbooks to automate system tasks like package installations, updates, and user management targeting multiple Ubuntu/RedHat servers simultaneously.",
+      projectDesc:
+        "Developed and executed Ansible playbooks to automate system tasks like package installations, updates, and user management targeting multiple Ubuntu/RedHat servers simultaneously.",
       footerLink: [
         {
-          name: "Visit Project", 
+          name: "Visit Project",
           url: "https://github.com/Abdelrahim-bebo/Ansible-Deploying-nodejs_app" // Add your project link
         }
       ]
@@ -304,12 +321,14 @@ const bigProjects = {
 // Achievement Section
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle:
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
       title: "KodeKloud DevOps Certifications",
-      subtitle: "Completed comprehensive DevOps training including Jenkins, Ansible, Docker, Kubernetes, and Shell Scripting",
+      subtitle:
+        "Completed comprehensive DevOps training including Jenkins, Ansible, Docker, Kubernetes, and Shell Scripting",
       image: require("./assets/images/kodekloud_logo.png"),
       footerLink: [
         {
@@ -320,15 +339,17 @@ const achievementSection = {
     },
     {
       title: "Linux System Administration",
-      subtitle: "Completed multiple Linux fundamentals courses totaling 98+ hours of hands-on training",
+      subtitle:
+        "Completed multiple Linux fundamentals courses totaling 98+ hours of hands-on training",
       image: require("./assets/images/Linux.jpg"),
-      footerLink: []  // Empty array since we don't have certificates yet
+      footerLink: [] // Empty array since we don't have certificates yet
     },
     {
-      title: "Programming Skills", 
-      subtitle: "Completed intensive programming courses in C++ (80 hrs), Python (50 hrs), and Golang",
+      title: "Programming Skills",
+      subtitle:
+        "Completed intensive programming courses in C++ (80 hrs), Python (50 hrs), and Golang",
       image: require("./assets/images/Python.png"),
-      footerLink: []  // Empty array since we don't have certificates yet
+      footerLink: [] // Empty array since we don't have certificates yet
     }
   ],
   display: true
@@ -337,13 +358,15 @@ const achievementSection = {
 // Blogs Section - You can add your Medium articles here
 const blogSection = {
   title: "Blogs",
-  subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  subtitle:
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://medium.com/@your-medium-username/article-title",
       title: "Getting Started with DevOps: A Beginner's Journey",
-      description: "My journey from Electronics Engineering to DevOps and the key lessons learned along the way."
+      description:
+        "My journey from Electronics Engineering to DevOps and the key lessons learned along the way."
     }
     // Add more blog posts as needed
   ],
@@ -353,7 +376,9 @@ const blogSection = {
 // Talks Sections - If you have given any talks
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
 
   talks: [
     // Add your talks here if any
@@ -373,7 +398,8 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+201044947347",
   email_address: "abdelrahimbebo@gmail.com",
   location: "SidiBeshr, Alexandria, Egypt"
@@ -403,15 +429,16 @@ const seo = {
   og: {
     title: "Abdelrahim Badr Portfolio",
     type: "website",
-    url: "https://Abdelrahim-bebo.github.io/",
-  },
+    url: "https://Abdelrahim-bebo.github.io/"
+  }
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  resumeLink: "https://drive.google.com/file/d/1RfJjixSuGwaephF76zv5Jvwp2v1HyExW/view?usp=sharing", // Replace with your Google Drive resume link,
+  resumeLink:
+    "https://drive.google.com/file/d/1RfJjixSuGwaephF76zv5Jvwp2v1HyExW/view?usp=sharing", // Replace with your Google Drive resume link,
   display: true // Set false to hide this section, defaults to true
 };
 
