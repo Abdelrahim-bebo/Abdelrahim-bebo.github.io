@@ -22,15 +22,16 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "start": "(node fetch.js || true) && react-scripts start",
+    "build": "(node fetch.js || true) && react-scripts build",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
     "sync:master": "git fetch origin && git pull --rebase origin master",
-    "push:master": "git push -u origin master"
+    "push:master": "git push -u origin master",
+    "sync:push:master": "npm run sync:master && npm run push:master"
   },
   "eslintConfig": {
     "extends": "react-app"
