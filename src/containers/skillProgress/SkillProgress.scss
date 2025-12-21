@@ -1,0 +1,11 @@
+.skill-progress.full-width {
+  width: 100%;
+  max-width: none;
+}
+
+// If there is an inner wrapper limiting width, also stretch it:
+.skill-progress.full-width .skill-progress-container,
+.skill-progress.full-width .skill-progress-main {
+  width: 100%;
+  max-width: none;
+}
